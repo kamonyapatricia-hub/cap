@@ -26,10 +26,8 @@ body{
     color: aqua;
  }
 
- .topnav a.active{
-    background-color: aliceblue;
-    color: rgb(40, 255, 183);
- }
+ 
+ 
 
    section {
       text-align: center;
@@ -44,4 +42,19 @@ body{
       height: 500px;
       object-fit: cover; /* keeps image nicely cropped */
       border-radius: 10px;
+    }
+
+    .About{
+        color: rgb(132, 0, 255);
+        background-color: rgb(49, 255, 255);
+    }
+
+    .footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(174, 87, 255);
+      color:rgb(7, 3, 255) ;
+      text-align: center;
     }
