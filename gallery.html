@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav"> 
+     <a class="active" href="cap.html">Home</a>
+     <a href="About as.html">About us</a>
+     <a href="gallery.html">gallery</a>
+     <a href="#">contact_us</a>
+ </div>
+
+<h1>Below are some of the images about my school.</h1>
+
+ <section>
+    <img  class="mySlides" src="heritage day 2026.jpeg" alt="slide1">
+    <img class="mySlides"  src="nova pioneer tatu primary and international.jpeg" alt="slide2">
+    <img class="mySlides"  src="principal christine katurima.jpeg" alt="slide3">
+     <img class="mySlides"  src="nova pioneer tatu primary and international school.jpeg" alt="slide4">
+ </section>
+  
+<div class="footer">
+  <footer>
+  <p>© All copyright are reserved by lisabett.</p>
+ </footer>
+</div>
+
+<div>
+  <p>the gallery above showcase some of the wonderfull moments in our school</p>
+  <p>We believe in learning beyond the classroom encouraging creativity and personaly growth   </p>
+ </div>
+
+ <script>
+    let myIndex = 0;
+
+    window.onload = function () {
+      carousel();
+    };
+
+    function carousel() {
+      let slides = document.getElementsByClassName("mySlides");
+
+      // hide all slides
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      myIndex++;
+
+      if (myIndex > slides.length) {
+        myIndex = 1;
+      }
+
+      slides[myIndex - 1].style.display = "block";
+
+      setTimeout(carousel, 3000); // change every 3 seconds
+    }
+  </script>
+
+</body>
+</html>
